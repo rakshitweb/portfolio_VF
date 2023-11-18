@@ -18,23 +18,49 @@
 
 @mixin media-query($breakpoint) {
   @if $breakpoint == "sm" {
-    @media (max-width: $breakpoint-sm) {
+    @media (min-width: $breakpoint-sm) {
       @content;
     }
   }
   @if $breakpoint == "md" {
-    @media (max-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-md) {
       @content;
     }
   }
   @if $breakpoint == "lg" {
-    @media (max-width: $breakpoint-lg) {
+    @media (min-width: $breakpoint-lg) {
       @content;
     }
   }
   @if $breakpoint == "xl" {
-    @media (max-width: $breakpoint-xl) {
+    @media (min-width: $breakpoint-xl) {
       @content;
     }
+  }
+}
+
+@mixin backdrop-blur($blur: 15px) {
+  backdrop-filter: blur($blur);
+}
+
+@mixin position($position: static, $top: "", $right: "", $bottom: "", $left: "") {
+  @if $position != "static" {
+    position: $position;
+  }
+
+  @if $top != "" {
+    top: $top;
+  }
+
+  @if $right != "" {
+    right: $right;
+  }
+
+  @if $bottom != "" {
+    bottom: $bottom;
+  }
+
+  @if $left != "" {
+    left: $left;
   }
 }

@@ -1,0 +1,18 @@
+@import "../../styles/abstract/";
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  @include media-query("sm") {
+    width: $breakpoint-sm;
+  }
+  @include media-query("md") {
+    width: $breakpoint-md;
+  }
+  @include media-query("lg") {
+    width: $breakpoint-lg;
+  }
+  @include media-query("xl") {
+    width: $breakpoint-xl;
+  }
+}

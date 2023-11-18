@@ -1,2 +1,11 @@
+@import "../../styles/abstract/";
+
 .navbar {
+  @include backdrop-blur();
+  @include position(sticky, 0);
+  padding: 3vh 2vw;
+  z-index: $z-index-navbar;
+
+  &__wrapper {
+  }
 }
