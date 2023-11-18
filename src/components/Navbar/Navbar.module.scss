@@ -2,10 +2,61 @@
 
 .navbar {
   @include backdrop-blur();
-  @include position(sticky, 0);
-  padding: 3vh 2vw;
+  @include position(fixed, 0);
+  width: 100%;
+  padding: 2vh 5vw;
   z-index: $z-index-navbar;
 
   &__wrapper {
+    @include flex(space-between, center, column, 1rem);
+    @include media-query("sm") {
+      flex-direction: row;
+    }
+  }
+
+  &__header {
+    @include flex(space-between, center, row, 1rem);
+    width: 100%;
+    @include media-query("sm") {
+      width: auto;
+    }
+  }
+
+  &__menu {
+    display: none;
+    height: 100%;
+
+    &__open {
+      @include backdrop-blur();
+      // @include position(absolute, 100%, 0);
+      @include flex(space-between, center, column, 1rem);
+      animation: menu-open 0.5s ease-in forwards;
+      width: 100%;
+    }
+
+    @include media-query("sm") {
+      @include flex(space-between, center, row, 2rem);
+    }
+
+    &__item {
+      padding: 0.25rem 0.5rem;
+    }
+
+    @keyframes menu-open {
+      from {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__hamburger {
+    @include media-query("sm") {
+      display: none;
+    }
   }
 }

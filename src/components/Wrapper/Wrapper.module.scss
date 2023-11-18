@@ -4,15 +4,15 @@
   width: 100%;
   margin: 0 auto;
   @include media-query("sm") {
-    width: $breakpoint-sm;
+    max-width: $breakpoint-sm;
   }
   @include media-query("md") {
-    width: $breakpoint-md;
+    max-width: $breakpoint-md;
   }
   @include media-query("lg") {
-    width: $breakpoint-lg;
+    max-width: $breakpoint-lg;
   }
   @include media-query("xl") {
-    width: $breakpoint-xl;
+    max-width: $breakpoint-xl;
   }
 }

@@ -1,0 +1,16 @@
+@import "../../styles/abstract/";
+
+.heading {
+  font-size: 2.4rem;
+  color: $primary;
+  &__functional {
+    &::before {
+      content: ".";
+      color: $blue-secondary;
+    }
+    &::after {
+      content: "()";
+      color: $blue-secondary;
+    }
+  }
+}
