@@ -1,41 +1,20 @@
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("../../fonts/BebasNeue-Regular.ttf");
-  font-style: normal;
+  font-family: "Comic Neue";
+  src: url(../../fonts/ComicNeue-Regular.ttf);
   font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Regular.ttf");
+  font-family: "Comic Neue";
+  src: url(../../fonts/ComicNeue-Light.ttf);
+  font-weight: lighter;
   font-style: normal;
-  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Bold.ttf");
+  font-family: "Comic Neue";
+  src: url(../../fonts/ComicNeue-Bold.ttf);
+  font-weight: bold;
   font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Light.ttf");
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Medium.ttf");
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-SemiBold.ttf");
-  font-style: normal;
-  font-weight: 600;
 }
